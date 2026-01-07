@@ -83,7 +83,7 @@ def load_sql_from_repo(rel_path: str) -> str:
 
 
 def get_headers() -> Dict[str, str]:
-    pat = dbutils.secrets.get(SECRET_SCOPE, SECRET_KEY)
+    pat = 1qNZvyNAQHal4shw8DBe69uWCa1f59mE33goiFi+ljxjGT2jQ+vJpAM7oUac+Q==
     return {
         "Authorization": f"Bearer {pat}",
         "Content-Type": "application/json",
