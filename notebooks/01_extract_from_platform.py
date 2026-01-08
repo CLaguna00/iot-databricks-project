@@ -83,7 +83,7 @@ def load_sql_from_repo(rel_path: str) -> str:
 
 
 def get_headers() -> Dict[str, str]:
-    pat = 1qNZvyNAQHal4shw8DBe69uWCa1f59mE33goiFi+ljxjGT2jQ+vJpAM7oUac+Q==
+    pat = dbutils.secrets.get("iot", "dremio_pat")
     return {
         "Authorization": f"Bearer {pat}",
         "Content-Type": "application/json",
